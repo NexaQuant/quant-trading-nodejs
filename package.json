@@ -1,0 +1,43 @@
+{
+  "name": "binance-api-node",
+  "version": "1.0.0",
+  "description": "High-performance Node.js API for Binance Exchange",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "stress-test": "ts-node scripts/stress-test.ts"
+  },
+  "keywords": [
+    "binance",
+    "api",
+    "nodejs",
+    "typescript",
+    "websocket",
+    "rest"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "pino": "^8.16.0",
+    "pm2": "^5.3.0",
+    "ws": "^8.14.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/ws": "^8.5.7",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "nodemon": "^3.0.1",
+    "pino-pretty": "^10.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
