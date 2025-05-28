@@ -1,0 +1,20 @@
+services:
+  app: # Changed service name from web to app for consistency with previous discussions
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules # Exclude node_modules from host volume to use container's version
+    restart: unless-stopped
+    # The environment variables below were in the original file, 
+    # but ideally should be managed by the .env file.
+    # If they are specific to the compose setup and not in .env, they can be kept.
+    # For now, I'll comment them out as .env is preferred.
+    # environment:
+    #   - DB_HOST=localhost
+    #   - DB_USER=root
+    #   - DB_PASSWORD=mysecretpassword
+

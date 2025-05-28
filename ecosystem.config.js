@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'binance-api-node',
-      script: 'dist/server.js',
+      script: '/usr/src/app/dist/server.js',
       instances: 1, // Or 'max' to scale to all available CPUs
       autorestart: true,
       watch: false, // Set to true to restart on file changes (dev only)

@@ -1,12 +1,14 @@
-# Dependencies
-node_modules/
-dist/
-
 # Environment variables
 .env
 
+# Dependencies
+node_modules/
+
+# Compiled TypeScript output
+dist/
+
 # Logs
-logs/
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -14,27 +16,4 @@ yarn-error.log*
 
 # OS generated files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-
-# IDEs and editors
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Build output
-coverage/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
